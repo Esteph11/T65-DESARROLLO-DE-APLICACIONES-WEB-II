@@ -1,0 +1,95 @@
+#root {  
+  max-width: 1280px;  
+  margin: 0 auto;  
+  padding: 2rem;  
+  text-align: center;  
+}  
+
+.logo {  
+  height: 6em;  
+  padding: 1.5em;  
+  will-change: filter;  
+  transition: filter 300ms;  
+}  
+
+.logo:hover {  
+  filter: drop-shadow(0 0 2em #646cffaa);  
+}  
+
+.logo.react:hover {  
+  filter: drop-shadow(0 0 2em #61dafbaa);  
+}  
+
+@keyframes logo-spin {  
+  from {  
+    transform: rotate(0deg);  
+  }  
+  to {  
+    transform: rotate(360deg);  
+  }  
+}  
+
+@media (prefers-reduced-motion: no-preference) {  
+  a:nth-of-type(2) .logo {  
+    animation: logo-spin infinite 20s linear;  
+  }  
+}  
+
+.card {  
+  padding: 2em;  
+}  
+
+.read-the-docs {  
+  color: #888;  
+}  
+
+/* Estilos para la tabla */  
+table {  
+  border-collapse: collapse;  
+  width: 100%;  
+  margin-top: 1rem; /* Margen superior para separar la tabla de otros elementos */  
+}  
+
+th, td {  
+  border: 1px solid #ddd;  
+  padding: 8px;  
+}  
+
+th {  
+  background-color: #a0c4ff; /* Color azul claro para el encabezado */  
+  color: #000000; /* Texto en blanco */  
+}  
+
+tr:nth-child(even) {  
+  background-color: #cddfff; /* Color azul claro para las filas pares */  
+}  
+
+tr:nth-child(odd) {  
+  background-color: #f0f9ff; /* Color blanco para las filas impares */  
+}  
+
+/* Estilo para el botón eliminar */  
+td button {  
+  color: red; /* Texto del botón de eliminar en rojo */  
+  border: none; /* Opcional: quitar los bordes del botón */  
+  background: none; /* Opcional: quitar el fondo del botón */  
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */  
+}  
+
+/* Espaciado entre los inputs y el botón de registro */  
+input {  
+  margin: 10px; /* Aumentar el margen para los inputs */  
+  height: 30px;
+  width: 200px;
+}  
+
+button[type="submit"] {  
+  margin-top: 10px; /* Margen superior específico para el botón de enviar */  
+  background-color: #888;
+  color: #000000;
+}  
+
+/* Estilo para el mensaje 'No hay usuarios registrados.' */  
+p {  
+  color: #555; /* Color gris para el texto informativo */  
+}
