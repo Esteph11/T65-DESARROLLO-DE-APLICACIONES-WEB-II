@@ -6,10 +6,9 @@ function App() {
   return (  
     <div>
       <AuthProvider> 
-        <div>  
-          <h1>Sistema de Autenticación</h1>  
+                    
           <UserProfile />  
-        </div>
+        
       </AuthProvider>  
     </div> 
   );  
