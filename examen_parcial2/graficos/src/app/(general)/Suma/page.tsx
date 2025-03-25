@@ -6,7 +6,7 @@ import { getSumaProductosMarca } from '@/app/Servicios/Api';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
-export default function Page() { // 🔹 Nombre del componente corregido
+export default function Page() { 
   const [charData, setCharData] = useState({
     labels: [] as string[],
     datasets: [{
