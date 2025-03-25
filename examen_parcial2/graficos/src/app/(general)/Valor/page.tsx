@@ -1,12 +1,12 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { getValorProductosCategoria } from '@/app/Servicios/Api';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-export default function Page() { 
+export default function page() { 
   const [chartData, setChartData] = useState({
     labels: [] as string[], 
     datasets: [
@@ -20,8 +20,8 @@ export default function Page() {
 
   useEffect(() => {
     getValorProductosCategoria().then((data: any[]) => {
-      const labels = data.map((item) => (item.DEPARTMENT_ID)); 
-      const totals = data.map((item) => (item.total_salary)); 
+      const labels = data.map((item) => (item.categoryCode)); 
+      const totals = data.map((item) => (item.total_value)); 
 
       setChartData({
         labels,
